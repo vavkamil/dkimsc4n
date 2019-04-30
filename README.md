@@ -4,6 +4,7 @@ Asynchronous wordlist based DKIM scanner
 *Useful during bug bounty hunting or read teaming to find insufficient DKIM records with RSA 512-bit keys*
 
 **CWE-326: Inadequate Encryption Strength**
+
 **Insufficient DKIM record with RSA 512-bit key used**
 
 [![asciicast](https://asciinema.org/a/243588.svg)](https://asciinema.org/a/243588)
