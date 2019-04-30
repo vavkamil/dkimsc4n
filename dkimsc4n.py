@@ -26,7 +26,7 @@ def parse_args():
     group.add_argument("-D", dest="domains", help="list of domains to scan", type=argparse.FileType('r'))
     parser.add_argument("-w", dest="wordlist", help="wordlist with dkim selectors (default: dkim.lst)", default="dkim.lst", type=argparse.FileType('r'))
     parser.add_argument("-o", dest="output", help="save output to a file (csv separated by semicolon)", type=argparse.FileType('w'))
-    group.add_argument("-t", dest="threads", help="number of threads (default: 5)", default="5", type=int)
+    parser.add_argument("-t", dest="threads", help="number of threads (default: 5)", default="5", type=int)
     return parser.parse_args()
 
 def load_dkim_wordlist(location):
