@@ -4,6 +4,7 @@ Asynchronous wordlist based DKIM scanner
 *Useful during bug bounty hunting or read teaming to find insufficient DKIM records with RSA 512-bit keys*
 
 **CWE-326: Inadequate Encryption Strength**
+**Insufficient DKIM record with RSA 512-bit key used**
 
 [![asciicast](https://asciinema.org/a/243588.svg)](https://asciinema.org/a/243588)
 
@@ -13,7 +14,7 @@ DKIM allows the receiver to check that an email claimed to have come from a spec
 
 ### Length of the Key
 
-With rapidly increasing processing power of computers, RSA keys with a 512-bit length, previously considered to be secure, can be cracked in a short period of time. Today, a minimum of 1024 bit RSA should be used. Organizations like the American National Institute of Standards and Technology (NIST) go further, and recommend aminimum of 2048 bits.
+With rapidly increasing processing power of computers, RSA keys with a 512-bit length, previously considered to be secure, can be cracked in a short period of time. Today, a minimum of 1024 bit RSA should be used. Organizations like the American National Institute of Standards and Technology (NIST) go further, and recommend a minimum of 2048 bits.
 
 ### Short key vulnerability
 
@@ -31,4 +32,4 @@ I wasn't able to find any related bug bounty reports, but the same problem was r
 
 ### Impact
 
-Attacker can obtain 512-bit RSA private key from DKIM record and use it to sign spoofed e-mails. This can lead to more sufficient phishing campaigns.
+An attacker can obtain 512-bit RSA private key from DKIM record and use it to sign spoofed e-mails. This can lead to more sufficient phishing campaigns.
