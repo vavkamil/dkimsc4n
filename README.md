@@ -22,6 +22,7 @@ According to RFC 6376 the receiving party must be able to validate signatures wi
 ### Exploitation
 
 A 512-bit RSA key is insecure, as was proved in 1998. Nowadays a 512-bit integers can be factored in only a few hours, for less than $100 of compute time in a public cloud environment: https://github.com/eniac/faas
+
 An attacker therefore might be able to obtain private key for said DKIM record and sign any emails for the associated domain. 
 
 ### Historical reports
