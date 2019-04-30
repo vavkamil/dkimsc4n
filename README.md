@@ -5,7 +5,7 @@ Asynchronous wordlist based DKIM scanner
 
 **CWE-326: Inadequate Encryption Strength**
 
-[![asciicast](https://asciinema.org/a/243588.svg)](https://asciinema.org/a/243588)
+<a href="https://asciinema.org/a/243588" target="_blank"><img src="https://asciinema.org/a/243588.svg"></a>
 
 ### What is DomainKeys Identified Mail (DKIM) ?
 
