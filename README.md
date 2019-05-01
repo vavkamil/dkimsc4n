@@ -1,7 +1,7 @@
 # dkimsc4n
 Asynchronous wordlist based DKIM scanner
 
-*Useful during bug bounty hunting or read teaming to find insufficient DKIM records with RSA 512-bit keys*
+*Useful during bug bounty hunting or red teaming to find insufficient DKIM records with RSA 512-bit keys*
 
 **CWE-326: Inadequate Encryption Strength**
 
