@@ -1,5 +1,6 @@
 # dkimsc4n
 Asynchronous wordlist based DKIM scanner
+https://hackerone.com/reports/550937
 
 *Useful during bug bounty hunting or red teaming to find insufficient DKIM records with RSA 512-bit keys*
 
