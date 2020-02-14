@@ -96,9 +96,7 @@ def scan_domain(domain):
         dkim_record = {executor.submit(check_dkim_record, selector, domain): selector for selector in dkim_selectors}
         for dkim in concurrent.futures.as_completed(dkim_record):
             try:
-                res = dkim.result()
-                (check, selector, domain, key_size,dkim_type_p) = res
-                #print (res)
+                (check, selector, domain, key_size,dkim_type_p) = dkim.result()
             except Exception as exc:
                 print (colored("\n[*] Error: "+str(exc), "magenta"))
             else:
@@ -112,7 +110,6 @@ def scan_domain(domain):
                         # create a new array in this slot
                         dkim_results[domain] = [s]
                         
-    #print (dkim_results)
     return dkim_results
 
 def check_results(dkim_results):
@@ -120,7 +117,6 @@ def check_results(dkim_results):
         print ("\n[i] Domain:", domain)
         for result in dkim_results[domain]:
             for selector in result:
-                #print (selector)
                 key_size = result[selector]['key_size']
                 dkim_type_p = result[selector]['dkim_type_p']
 
