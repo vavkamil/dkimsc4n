@@ -1,2 +1,3 @@
-sudo apt-get install python3-dnspython
-sudo apt-get install python3-termcolor
+termcolor==1.1.0
+dnspython==2.1.0
+pycryptodome==3.10.1
