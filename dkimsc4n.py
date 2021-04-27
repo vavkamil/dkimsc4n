@@ -210,6 +210,7 @@ if __name__ == "__main__":
         print("[i] Scanning multiple domains:", args.domains.name)
         print("[i] Domains in a list:", str(len(domains)))
         for domain in domains:
+            print("[i] Scanning a single domain:", domain)
             dkim_results = scan_domain(domain)
             check_results(dkim_results)
 
